@@ -1,0 +1,165 @@
+/* id="home"
+leayer
+content
+h1
+p
+span
+ */
+html {
+  --text-color-light: #facaca;
+  --bg-color: rgba(214, 46, 51, 0.6);
+}
+
+html, body {
+  scroll-behavior: smooth !important;
+}
+a {
+  text-decoration: none;
+}
+
+#home {
+  width: 100%;
+  height: 650px;
+  background-image: url("../image/Peabol.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  position: relative;
+  color: white;
+  font-weight: bold;
+}
+.leayer {
+  background-color: #ff0a0a7d;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.content h1 {
+  font-size: 2.6rem;
+}
+
+.leftNav {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  background-color: rgb(37, 21, 21);
+  top: 0;
+  bottom: 0;
+  left: -30%;
+  z-index: 10000;
+}
+.leftNav .openNav {
+  position: absolute;
+  width: 60px;
+  right: -65px;
+  top: 30%;
+  transition: 0.5s;
+  cursor: pointer;
+  background-color: #ff0a0a7d;
+  border-radius: 10px;
+  z-index: 9999;
+}
+.leftNav i {
+  margin-left: 50%;
+  color: var(--text-color-light);
+  margin-top: 20px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.leftNav a {
+  color: var(--text-color-light);
+  text-decoration: none;
+  margin: 20px;
+  transition: 0.5s;
+}
+.leftNav>:hover {
+  color: red;
+}
+
+
+        /* duration Section */
+
+#duration {
+  width: 60%;
+  padding: 50px 0px;
+  margin-top: 50px;
+}
+#duration h3.singer {
+  background-color: var(--bg-color);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 0;
+}
+#duration p.slider {
+  background-color: #ccc;
+  margin-bottom: 0;
+  padding: 10px;
+  display: none;
+}
+
+
+            /* details section */
+
+#details {
+  height: 350px;
+  width: 100%;
+  background-image: url("../image/Join\ img.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  position: relative;
+  margin: 50px 0px;
+}
+#details .leayer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+#details span {
+  width: 200px;
+  height: 200px;
+  color: rgb(243, 243, 243);
+  font-size: 40px;
+  font-weight: bold;
+  border: 5px solid white;
+  padding-top: 50px;
+  text-align: center;
+}
+
+        /* contact section */
+
+
+.sochalmedua i {
+  width: 30px;
+  height: 30px;
+  border: 1px solid;
+  text-align: center;
+  padding-top: 5px;
+  margin-right: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #777;
+  transition: .5s;
+}
+.sochalmedua i:hover {
+  color: #ff0a0a;
+  border-radius: 50%;
+}
+
+textarea {
+  height: 200px;
+  resize: vertical;
+}
